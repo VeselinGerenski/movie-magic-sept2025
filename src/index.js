@@ -6,10 +6,13 @@ const app = express();
 // Setup Handlebars
 app.engine('hbs', handlebars.engine({
     extname: 'hbs',
-}))
+}));
 
 app.set('view engine', 'hbs');
 app.set('views', 'src/views');
+
+// Setup midlewares
+app.use(express.static('src/public'));
 
 app.get('/', (req, res) => {
     res.render('home', { layout: false });
