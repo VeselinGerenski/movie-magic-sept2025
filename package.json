@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/VeselinGerenski/movie-magic-sept2025#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3"
   }
 }
