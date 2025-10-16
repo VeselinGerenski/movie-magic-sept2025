@@ -17,5 +17,4 @@ app.use(express.static('src/public'));
 
 app.use(homeController);
 
-
 app.listen(5000, () => console.log('Server is listening on http://localhost:5000..'));
