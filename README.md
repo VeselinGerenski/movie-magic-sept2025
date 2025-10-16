@@ -9,4 +9,6 @@ Softuni JS Back-End Course
 - [x] Setup Handlebars
 - [x] Setup static files
 - [x] Render Home Page
-- [] Config Debugging
+- [x] Config Debugging
+- [] Add Layout
+- [] Render About Page
