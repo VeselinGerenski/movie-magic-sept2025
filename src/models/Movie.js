@@ -41,3 +41,5 @@ class Movie {
         return movies.slice();
     }
 }
+
+export default Movie;
