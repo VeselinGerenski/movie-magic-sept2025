@@ -10,7 +10,7 @@ const movies = [
         rating: '6.6',
         category: 'movie',
     },
-     {
+    {
         id: 'z2682672-0ee4-1534-8759-35ee253329ty',
         title: 'Man on Steel',
         genre: 'Superhero',
@@ -20,7 +20,7 @@ const movies = [
         year: '2013',
         rating: '7.1',
         category: 'movie',
-    }, 
+    },
     {
         id: 'a3554372-0ee4-1284-8759-35ee253329zv',
         title: 'Home Alone',
@@ -36,9 +36,18 @@ const movies = [
 ]
 
 export default class Movie {
+    constructor(data) {
+        Object.assign(this, data);
+    }
+
     static find() {
-      
         return movies.slice();
     }
-}
+
+    save() {
+       movies.push(this);
+          
+       return this;
+    }
+};
 

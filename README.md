@@ -26,10 +26,14 @@ Softuni JS Back-End Course
 - [x] Show create movie page
 - [x] Add routes
 - [x] Read body data
-- [] Create movie
+- [x] Create movie
   - [x] Add action
   - [x] Add service
-  - [] Add model method for creating movie
+  - [x] Add model method for creating movie
+- [x] Redirect after creation
+
+
+
   
 
 
