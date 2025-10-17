@@ -1,4 +1,6 @@
 import { Router } from "express";
+import movieService from "../services/movieService.js";
+
 
 const movieController = Router();
 
@@ -7,8 +9,9 @@ movieController.get('/create', (req, res) => {
 });
 
 movieController.post('/create', (req, res) => {
-    // TODO read data from request
-    console.log(req.body);
+     const movieData = req.body;
+    
+   movieService.create(movieData)
 
     res.end();
 });
