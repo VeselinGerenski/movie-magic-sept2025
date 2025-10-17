@@ -34,8 +34,6 @@ Softuni JS Back-End Course
 
 
 
-  
-
 
 
 
