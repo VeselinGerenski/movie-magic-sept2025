@@ -15,6 +15,9 @@ app.set('views', 'src/views');
 // Setup midlewares
 app.use(express.static('src/public'));
 
+// Parse form data from request
+app.use(express.urlencoded());
+
 // Routes
 app.use(routes);
 
