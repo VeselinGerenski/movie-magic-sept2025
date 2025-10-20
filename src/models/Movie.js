@@ -44,20 +44,36 @@ export default class Movie {
         this._id = uuid();
     }
 
-    static find() {
-        return movies.slice();
+    static find(filter = {}) {
+        let result = movies.slice();
+
+        //TODO Filter
+        if (filter._id) {
+            result = movies.filter(movie => movie._id === filter._id);
+        };
+
+        return result;
     }
-   
-    get id(){
+    static findOne(filter = {}) {
+        let result = movies[0];
+
+        if (filter._id) {
+            result = movies.find(movie => movie._id === filter._id);
+        };
+
+        return result;
+    }
+
+    get id() {
         return this._id;
     }
 
     save() {
-       movies.push(this);
-          
-       console.log(movies);
+        movies.push(this);
 
-       return this;
+        console.log(movies);
+
+        return this;
     }
 };
 
