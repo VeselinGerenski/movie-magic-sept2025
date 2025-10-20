@@ -41,10 +41,13 @@ Softuni JS Back-End Course
 - [x] Render details page with dynamic data
 
 ### Search
- [x] show static search page
- [x] Render all movies
- [x] Modify search form
- [x] filter movies
+ - [x] show static search page
+ - [x] Render all movies
+ - [x] Modify search form
+ - [x] filter movies
+    - By year
+    - By genre
+    - By title
  [] Remember search words
 
 ### Bonuses
