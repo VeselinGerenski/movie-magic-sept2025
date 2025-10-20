@@ -43,8 +43,8 @@ Softuni JS Back-End Course
 ### Search
  [x] show static search page
  [x] Render all movies
- [] Modify search form
- [] filter movies
+ [x] Modify search form
+ [x] filter movies
  [] Remember search words
 
 ### Bonuses
