@@ -3,8 +3,6 @@ import movieService from "../services/movieService.js";
 
 const movieController = Router();
 
-
-
 movieController.get('/create', (req, res) => {
     res.render('create')
 });
@@ -21,8 +19,9 @@ movieController.post('/create', (req, res) => {
 
 movieController.get('/:movieId/details', (req,res) =>{
     const movieId = req.params.movieId;
+    const movie = movieService.getOne(movieId);
 
-   console.log(movieId);
+   console.log(movie);
 
    res.end();
 })
