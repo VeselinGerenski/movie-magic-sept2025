@@ -2,7 +2,7 @@ import { v4 as uuid } from "uuid";
 
 const movies = [
     {
-        id: 'a3582672-0ee4-1284-8759-35ee253329zv',
+        _id: 'a3582672-0ee4-1284-8759-35ee253329zv',
         title: 'Jungle Cruise',
         genre: 'Adventure',
         description: 'dwadwadwadawdwadawda',
@@ -13,7 +13,7 @@ const movies = [
         category: 'movie',
     },
     {
-        id: 'z2682672-0ee4-1534-8759-35ee253329ty',
+        _id: 'z2682672-0ee4-1534-8759-35ee253329ty',
         title: 'Man on Steel',
         genre: 'Superhero',
         description: 'An alien...3232233232323232',
@@ -24,7 +24,7 @@ const movies = [
         category: 'movie',
     },
     {
-        id: 'a3554372-0ee4-1284-8759-35ee253329zv',
+        _id: 'a3554372-0ee4-1284-8759-35ee253329zv',
         title: 'Home Alone',
         genre: 'Comedy',
         description: 'dwadwadwadawdwadawda',
@@ -35,7 +35,7 @@ const movies = [
         category: 'movie',
     },
 
-]
+];
 
 export default class Movie {
     constructor(data) {
@@ -56,7 +56,6 @@ export default class Movie {
        movies.push(this);
           
        console.log(movies);
-       
 
        return this;
     }
