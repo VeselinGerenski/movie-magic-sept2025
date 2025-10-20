@@ -8,22 +8,29 @@ movieController.get('/create', (req, res) => {
 });
 
 movieController.post('/create', (req, res) => {
-   const movieData = req.body;
+    const movieData = req.body;
 
-  const movie = movieService.create(movieData);
+    const movie = movieService.create(movieData);
 
-   console.log(movie);
-   
+    console.log(movie);
+
     res.redirect('/');
 });
 
-movieController.get('/:movieId/details', (req,res) =>{
+movieController.get('/:movieId/details', (req, res) => {
     const movieId = req.params.movieId;
     const movie = movieService.getOne(movieId);
 
-   console.log(movie);
+    console.log(movie);
 
-   res.render('details', { movie });
+    res.render('details', { movie });
 })
+
+movieController.get('/search', (req, res) => {
+   const movies = movieService.getAll();
+
+    res.render('search', { movies });
+});
+
 
 export default movieController;
