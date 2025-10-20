@@ -34,8 +34,8 @@ Softuni JS Back-End Course
 - [x] Redirect after creation
 - [x] Add unique id for each created movie
 ### Details
-- [] Add navigation button for details page
-- [] Add route with param for details page
+- [x] Add navigation button for details page
+- [x] Add route with param for details page
 - [] get one movie from service
 - [] Find movie by id from model
 - [] Render details page with dynamic data
