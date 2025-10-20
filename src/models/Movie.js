@@ -53,12 +53,12 @@ export default class Movie {
         }
 
         if (filter.title) {
-            // TODO Search by title, partial match, case insensitive 
+            // TODO Search by title, partial match, case insensitive
+            result = result.filter(movie => movie.title.toLocaleLowerCase().includes(filter.title.toLocaleLowerCase()))
         }
 
         if (filter.genre) {
-            // TODO Search by genre, exact match, case insensitive 
-
+            // Search by genre, exact match, case insensitive 
             result = result.filter(movie => movie.genre.toLocaleLowerCase() === filter.genre.toLocaleLowerCase());
         }
 
