@@ -51,6 +51,7 @@ Softuni JS Back-End Course
     -[x] Remember search words
 
 ### Bonuses
+- [] Dynamic page title
 - [] File Persistance
 - [] Rating
 
